@@ -5,7 +5,7 @@ body{
 	color: white;
 	font-size: 32px;
 	font-family: impact,sans-serif;
-	padding: 0px
+	padding: 0px;
 	margin: 0px;
 }
 
@@ -77,23 +77,12 @@ a:hover {
   padding-bottom: 12px;
 }
 
-@media screen and (max-width: 700px) {
-  .navbar a {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
+
 
 .subheading {
 	text-align: center;
 	font-size: 36px;
 	color: #4AFFF7;
-	background-color: black;
-	background: rgba(0, 0, 0, 0.5);
-	padding-top: 0.3em;
-	padding-bottom: 0.2em;
 }
 
 .heading {
@@ -123,13 +112,32 @@ p {
 .menu {
 	background-color: black;
 	background: rgba(0, 0, 0, 0.5);
-	padding-top: 0.5em;
+	padding-top: 1em;
 	padding-bottom: 0.2em;
 }	
 
 .menupic {
-	float: right;
 	padding-left: 0.2em;
+}
+
+.content {
+	display:table-row;
+	table-layout: fixed;
+
+}
+
+.subcontent1 {
+	display: table-cell;
+	text-align: center;
+
+}
+
+.subcontent2 {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+
+	
 }
 
 .layout {
@@ -137,11 +145,40 @@ p {
 	background: rgba(0, 0, 0, 0.5);
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
+	background-size: 100%;
 
 }	
+
+.grow { 
+transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+transform: scale(1.2); 
+}
 
 .small-middle-container {
 	margin: auto;
 	width: 75%;	
 	align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar a {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.info {
+		padding-left: 1em;
+	}
+	.info2 {
+		padding-right: 1em;
+	}
+	.flex-container {
+		display: flex;
+		flex-direction: row;
+		align-items: left;
+}
 }
