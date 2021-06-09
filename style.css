@@ -1,4 +1,3 @@
-
 body{
 	background: url(brickwall.jpg);
 	background-size: 100%;
@@ -30,7 +29,6 @@ body{
 
 .navbar-custom { 
 	background-color: black; 
-
 } 
 
 .navbar a {
@@ -49,40 +47,40 @@ body{
 }
 
 a:link {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 a:visited {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 a:hover {
-  color: magenta;
-  text-decoration: underline;
+	color: magenta;
+	text-decoration: underline;
 }
 
 .footer {
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-size: 24px;
-  line-height: 24px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
+	position: relative;
+	left: 0;
+	bottom:0;
+	width: 100%;
+	font-size: 24px;
+	line-height: 24px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 0px;
 }
-
-
 
 .subheading {
 	text-align: center;
 	font-size: 36px;
 	color: #4AFFF7;
+	padding: 1em;
 }
 
 .heading {
@@ -92,15 +90,7 @@ a:hover {
 	font-size: 48px;
 }
 
-.info {
-	padding-left: 289px;
-}
-
-.info2 {
-	padding-right: 289px;
-}
-
-h2 {
+h2, h1 {
 	color: magenta;
 }
 
@@ -109,58 +99,36 @@ p {
 	color: white;
 }
 
+.info {
+	background-color: black;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 1.5em;
+}
+
 .menu {
 	background-color: black;
 	background: rgba(0, 0, 0, 0.5);
-	padding-top: 1em;
-	padding-bottom: 0.2em;
+	padding: 2em;
+	text-align: center;
+}	
+
+.intro {
+	background-color: black;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 2em;
+	text-align: center;
 }	
 
 .menupic {
-	padding-left: 0.2em;
-}
-
-.content {
-	display:table-row;
-	table-layout: fixed;
-
-}
-
-.subcontent1 {
-	display: table-cell;
 	text-align: center;
-
 }
-
-.subcontent2 {
-	display: table-cell;
-	text-align: left;
-	vertical-align: middle;
-
-	
-}
-
-.layout {
-	background-color: black;
-	background: rgba(0, 0, 0, 0.5);
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	background-size: 100%;
-
-}	
 
 .grow { 
-transition: all .2s ease-in-out; 
+	transition: all .2s ease-in-out; 
 }
 
 .grow:hover { 
-transform: scale(1.2); 
-}
-
-.small-middle-container {
-	margin: auto;
-	width: 75%;	
-	align: center;
+	transform: scale(1.2); 
 }
 
 @media screen and (max-width: 800px) {
@@ -180,5 +148,8 @@ transform: scale(1.2);
 		display: flex;
 		flex-direction: row;
 		align-items: left;
-}
+	}
+	h2 {
+		text-align: center;
+	}
 }
